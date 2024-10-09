@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3sn65pqpnmrf"]
+
+[ext_resource type="Script" path="res://city.gd" id="1_260xr"]
+[ext_resource type="Texture2D" uid="uid://bytpg46qfkev4" path="res://img/house.svg" id="2_kispu"]
+
+[node name="City" type="Node2D"]
+modulate = Color(0, 0, 0, 1)
+script = ExtResource("1_260xr")
+
+[node name="CityButton" type="TextureButton" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_kispu")
+
+[node name="CityLabel" type="Label" parent="."]
+offset_right = 80.0
+offset_bottom = 80.0

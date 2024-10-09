@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvjlpoekwrs47"]
+
+[ext_resource type="Script" path="res://UI/city_info.gd" id="1_fnhfl"]
+
+[node name="MainPanel" type="Panel"]
+self_modulate = Color(0.207512, 0.207512, 0.207512, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_fnhfl")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -108.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CityName" type="Label" parent="VBox"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+text = "CITYNAME"
+
+[node name="Info" type="Label" parent="VBox"]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="."]
+self_modulate = Color(0.811837, 0.811837, 0.811837, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.95
+anchor_top = 0.05
+anchor_right = 0.99
+anchor_bottom = 0.05
+offset_left = -50.5
+offset_top = -11.45
+offset_right = -0.5
+offset_bottom = 28.55
+grow_horizontal = 0
+text = "Close"

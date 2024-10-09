@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds7hq6ea8pnhu"]
+
+[ext_resource type="Script" path="res://UI/control_menu.gd" id="1_imgk3"]
+
+[node name="ControlMenu" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_imgk3")
+
+[node name="MakeTrain" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.05
+anchor_right = 0.5
+anchor_bottom = 0.05
+offset_left = -109.0
+offset_right = 109.0
+offset_bottom = 92.0
+grow_horizontal = 2
+text = "Train"

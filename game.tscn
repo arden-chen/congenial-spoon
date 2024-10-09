@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://cw1i8sn4larw2"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_fybnu"]
+[ext_resource type="Script" path="res://camera.gd" id="1_oe2yv"]
+[ext_resource type="Script" path="res://map.gd" id="2_hoj6r"]
+[ext_resource type="PackedScene" uid="uid://cvjlpoekwrs47" path="res://UI/CityInfo.tscn" id="4_1lw8t"]
+[ext_resource type="PackedScene" uid="uid://ds7hq6ea8pnhu" path="res://UI/ControlMenu.tscn" id="5_oxm43"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_fybnu")
+
+[node name="camera" type="Camera2D" parent="."]
+script = ExtResource("1_oe2yv")
+
+[node name="map" type="Polygon2D" parent="."]
+script = ExtResource("2_hoj6r")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="CityInfo" parent="GUI" instance=ExtResource("4_1lw8t")]
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.1
+anchor_right = 0.7
+anchor_bottom = 0.9
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="ControlMenu" parent="GUI" instance=ExtResource("5_oxm43")]
+anchors_preset = -1
+anchor_right = 0.06
+offset_left = 33.0
+offset_top = 17.0
+offset_right = 170.88
+offset_bottom = -14.0
+grow_horizontal = 1
